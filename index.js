@@ -1,6 +1,7 @@
-let count=0;
+let sum=0;
 for(let i=1;i<=100;i++)
-{
+{   let count=0;
+    
     for(let j=1;j<=100;j++)
     {
         if(i%j===0)
@@ -10,6 +11,9 @@ for(let i=1;i<=100;i++)
     }
     if(count==2)
     {
-        console.log(i);
+        sum=sum+i;
     }
+    //let sum=+i;
+   
 }
+console.log(sum);
